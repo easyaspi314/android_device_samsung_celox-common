@@ -38,6 +38,8 @@ on fs
 
     mount_all fstab.qcom
 
+    symlink /data/data/com.android.providers.telephony/shared_prefs/preferred-apn1.xml /data/data/com.android.providers.telephony/shared_prefs/preferred-apn.xml
+
 on post-fs-data
     write /sys/devices/i2c-0/0-0024/cyttsp_update_fw 1
 
